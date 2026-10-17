@@ -1,0 +1,11 @@
+name: vbox-ovf-nat-tftp-prefix
+
+services:
+  gadget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    restart: "no"
+    labels:
+      lab: vbox-ovf-nat-tftp-prefix
